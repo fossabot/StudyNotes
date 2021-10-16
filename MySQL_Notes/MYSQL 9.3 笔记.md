@@ -1,0 +1,146 @@
+# 9月3日笔记 2002 5678节
+
+## 1.回顾 [[MySQL 9.2 笔记]]
+
+1. 数据库的相关操作
+   1. 创建数据库：create database if not exists 数据库名;
+   2. 删除数据库：drop database if exists 数据库名;
+   3. 查看数据库：show databases;
+   4. 使用数据库：use 数据库名;
+2. MySQL中常见数据类型：int 、varchar、date、datetime...
+3. 创建数据表的基本语法
+
+## 2.创建数据表（DDL 数据定义语言）
+
+```sql
+-- 创建数据库
+CREATE DATABASE IF NOT EXISTS db_2002;
+-- 使用数据库
+USE db_2002;
+-- 创建教师表
+CREATE TABLE IF NOT EXISTS teacher(
+	id INT,
+	NAME VARCHAR(20)
+);
+-- 查看所有数据库
+SHOW DATABASES;
+-- 查看当前数据库下的表
+SHOW TABLES;
+```
+
+## 3.修改数据表
+
+**修改表名**
+
+语法：
+
+```sql
+ALTER TABLE 旧表名 RENAME AS 新表名;
+```
+
+```sql
+-- 修改表名
+ALTER TABLE teacher RENAME AS teachers;
+SHOW TABLES;
+```
+
+**添加字段**
+
+语法：
+
+```sql
+ALTER TABLE 表名 ADD 字段名 列类型;
+```
+
+```sql
+-- 添加字段
+ALTER TABLE teachers ADD gender VARCHAR(20);
+-- 查看表结构
+-- describe teachers;
+DESC teachers;
+```
+
+**修改字段**
+
+方式1：修改字段的列类型
+
+语法：
+
+```sql
+ALTER TABLE 表名 MODIFY 字段名 列类型;
+```
+
+```sql
+-- 修改表结构
+ALTER TABLE teachers MODIFY gender VARCHAR(10);
+DESC teachers;
+```
+
+方式2：修改字段名
+
+语法：
+
+```sql
+ALTER TABLE 表名 CHANGE 旧字段名 新字段名 列类型;
+```
+
+```sql
+-- 修改字段名
+ALTER TABLE teachers CHANGE gender sex VARCHAR(20);
+DESCRIBE teachers;
+```
+
+**删除字段**
+
+语法：
+
+```SQL
+ALTER TABLE 表名 DROP 字段名;
+```
+
+```sql
+-- 删除字段
+ALTER TABLE teachers DROP sex;
+DESC teachers;
+```
+
+## 4.删除数据表
+
+语法：
+
+```sql
+DROP TABLE [IF EXISTS] 表名;
+```
+
+<font color="red">注：IF EXISTS为可选判断是否存在该数据表，如果删除不存在的数据表会抛出错误</font>
+
+```sql
+-- 删除数据表
+DROP TABLE IF EXISTS teachers;
+SHOW TABLES;
+```
+
+## 5.DML语言（数据操作语言）
+
+作用：用于操作数据库对象中所包含的数据】
+
+包括：
+
+1. INSERT（添加数据语句）
+2. UPDATE（更新数据语句）
+3. DELETE（删除数据语句）
+
+**添加数据**
+
+语法：
+
+```sql
+INSERT INTO 表名[(字段1,字段2,字段3,...)] VALUES('值1','值2'，'值3',...);
+```
+
+注：
+
+1. 字段和值用英文逗号隔开
+2. [(字段1,字段2,字段3,...)]该部分可以省略，但添加的值务必于表结构中的列==顺序==相对应，且==数量==一致
+3. 可同时插入多条数据，VALUES后用英文逗号隔开
+
