@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>demo_09_15_2002</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 配置web应用参数 -->
+  <context-param>
+  	<param-name>student</param-name>
+  	<param-value>guojun</param-value>
+  </context-param>
+  
+  <!-- 配置Servlet -->
+  <servlet>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<servlet-class>app01.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LifeDemo</servlet-name>
+  	<servlet-class>app02.LifeDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LifeDemo</servlet-name>
+  	<url-pattern>/LifeDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>InitDemo</servlet-name>
+  	<servlet-class>app03.InitDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InitDemo</servlet-name>
+  	<url-pattern>/InitDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ConfigDemo</servlet-name>
+  	<servlet-class>app04.ConfigDemo</servlet-class>
+  	<!-- 配置Servlet初始化参数 -->
+  	<init-param>
+  		<param-name>student</param-name>
+  		<param-value>haoyue</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ConfigDemo</servlet-name>
+  	<url-pattern>/ConfigDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ContextDemo1</servlet-name>
+  	<servlet-class>app05.ContextDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextDemo1</servlet-name>
+  	<url-pattern>/ContextDemo1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ContextDemo2</servlet-name>
+  	<servlet-class>app05.ContextDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextDemo2</servlet-name>
+  	<url-pattern>/ContextDemo2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ContextDemo3</servlet-name>
+  	<servlet-class>app05.ContextDemo3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextDemo3</servlet-name>
+  	<url-pattern>/ContextDemo3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ContextDemo4</servlet-name>
+  	<servlet-class>app05.ContextDemo4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextDemo4</servlet-name>
+  	<url-pattern>/ContextDemo4</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RequestDemo</servlet-name>
+  	<servlet-class>app06.RequestDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RequestDemo</servlet-name>
+  	<url-pattern>/RequestDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ForwardDemo</servlet-name>
+  	<servlet-class>app07.ForwardDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ForwardDemo</servlet-name>
+  	<url-pattern>/ForwardDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GetDataServlet</servlet-name>
+  	<servlet-class>app07.GetDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetDataServlet</servlet-name>
+  	<url-pattern>/GetDataServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RedirectDemo</servlet-name>
+  	<servlet-class>app07.RedirectDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RedirectDemo</servlet-name>
+  	<url-pattern>/RedirectDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CookieDemo</servlet-name>
+  	<servlet-class>app08.CookieDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CookieDemo</servlet-name>
+  	<url-pattern>/CookieDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteCookie</servlet-name>
+  	<servlet-class>app08.DeleteCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteCookie</servlet-name>
+  	<url-pattern>/DeleteCookie</url-pattern>
+  </servlet-mapping>
+</web-app>
