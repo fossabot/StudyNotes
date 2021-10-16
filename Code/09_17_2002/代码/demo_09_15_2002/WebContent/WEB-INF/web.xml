@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>demo_09_15_2002</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 配置Servlet -->
+  <servlet>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<servlet-class>app01.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FirstServlet</servlet-name>
+  	<url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LifeDemo</servlet-name>
+  	<servlet-class>app02.LifeDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LifeDemo</servlet-name>
+  	<url-pattern>/LifeDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>InitDemo</servlet-name>
+  	<servlet-class>app03.InitDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InitDemo</servlet-name>
+  	<url-pattern>/InitDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ConfigDemo</servlet-name>
+  	<servlet-class>app04.ConfigDemo</servlet-class>
+  	<!-- 配置Servlet初始化参数 -->
+  	<init-param>
+  		<param-name>student</param-name>
+  		<param-value>haoyue</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ConfigDemo</servlet-name>
+  	<url-pattern>/ConfigDemo</url-pattern>
+  </servlet-mapping>
+</web-app>
