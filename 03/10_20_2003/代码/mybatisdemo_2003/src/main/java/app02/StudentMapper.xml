@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="app02.StudentMapper">
+    <resultMap id="studentMap" type="app02.Student">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sal" column="sal"/>
+    </resultMap>
+
+    <!-- 学生添加功能 -->
+    <insert id="add" parameterType="app02.Student">
+        insert into student(id,name,sal) values (#{id},#{name},#{sal})
+    </insert>
+
+    <!--
+        根据id查询学生
+        select标签：用于映射SQL的select语句
+            id属性：命名空间的唯一标示符
+            parameterType属性：表示传入SQL的参数类型
+            resultType属性：表示SQL语句返回类型的完整类名或别名
+    -->
+    <select id="findById" parameterType="int" resultType="app02.Student">
+        select id,name,sal from student where id=#{id}
+    </select>
+</mapper>
