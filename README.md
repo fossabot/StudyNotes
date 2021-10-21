@@ -2,22 +2,22 @@
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-blue"></a>
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
 
-# 关于Git的使用说明
+# 📚 关于Git的使用说明
 
-## *1. 回答你们的问题* 
+## ❓ *1. 回答你们的问题* 
 
-### 1. 为什么不使用原先的压缩包形式发布？
+### 📄 1. 为什么不使用原先的压缩包形式发布？
 
-> A：因为Git更容易修改代码缺陷 更容易协同工作 且相同情况下 Git为最具有效率的方式。
-
-
-### 2. 为什么要注册Gitee？
-
-> A：因为Gitee为国内较好的代码分享平台，在国内这种大环境下Gitee是最优选。
-如果你经常翻墙啊一类的，那对于你来说 Github才是最优选。
+> A：因为 `Git` 更容易修改代码缺陷 更容易协同工作 且相同情况下 `Git` 为最具有效率的方式。
 
 
-### 3. 为什么你的页面上有这么多选项？ 我应该选哪个？
+### 📄 2. 为什么要注册Gitee？
+
+> A：因为 `Gitee` 为国内较好的代码分享平台，在国内这种大环境下 `Gitee` 是最优选。
+如果你经常上外网，那对于你来说 `Github` 才是最优选。
+
+
+### 📄 3. 为什么你的页面上有这么多选项？ 我应该选哪个？
 
 > A：这个回答可能有点长 请耐心看完。
 > - 我选择了不同的平台 代码在这五个平台里面是 完全相同的 。
@@ -28,7 +28,7 @@
 >   - ·[CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true)· 无需登陆，可直接直链下载当日包含历史的所有压缩包。
 
 
-### 4. 具体应该怎么下载？
+### 📄 4. 具体应该怎么下载？
 
 > 1. 包含文件窗口的右上角，一般会有一个 克隆/下载 图标或者字样。
 > 2. 单击那个 图标/字样
@@ -39,24 +39,22 @@
 ```Bash
 git clone https://agit.ai/CurtisCN/StudyNotes.git
 git clone https://github.com/curtisrecords/StudyNotes.git
-git clone https://hub.fastgit.org/curtisrecords/StudyNotes.git
-git clone https://gitclone.com/github.com/curtisrecords/StudyNotes.git
-git clone https://github.com.cnpmjs.org/curtisrecords/StudyNotes.git
 git clone https://gitee.com/CurtisCN/StudyNotes.git
 git clone https://code.cts.blue/Curtis/StudyNotes.git
 ```
 
 
-## *2. Git 的安装以及使用教程* 
+## ❓ *2. Git 的 安装 以及 使用教程* 
 
-[https://www.cnblogs.com/ximiaomiao/p/7140456.html](https://www.cnblogs.com/ximiaomiao/p/7140456.html)
+🔗 [https://www.cnblogs.com/ximiaomiao/p/7140456.html](https://www.cnblogs.com/ximiaomiao/p/7140456.html)
 
 - 前人已经写过了，我就不重复造轮子了。
 
-## *3. 具体网址链接在哪里？* 
+## ❓ *3. 具体 网址链接 在哪里？* 
 
-[https://notes.cts.blue](https://notes.cts.blue)
+🔗 [https://notes.cts.blue](https://notes.cts.blue)
 
 - 在这里哦！
 
-> 国内镜像非即时同步,如没同步到Gitee上 请提醒我Push一下代码。
+> 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步。
+> 如没同步到当前平台上，请带上平台名称来提醒我Push一下代码。
