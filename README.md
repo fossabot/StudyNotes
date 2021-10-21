@@ -38,6 +38,12 @@
 
 ```Bash
 git clone https://agit.ai/CurtisCN/StudyNotes.git
+git clone https://github.com/curtisrecords/StudyNotes.git
+git clone https://hub.fastgit.org/curtisrecords/StudyNotes.git
+git clone https://gitclone.com/github.com/curtisrecords/StudyNotes.git
+git clone https://github.com.cnpmjs.org/curtisrecords/StudyNotes.git
+git clone https://gitee.com/CurtisCN/StudyNotes.git
+git clone https://code.cts.blue/Curtis/StudyNotes.git
 ```
 
 
