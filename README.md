@@ -1,6 +1,6 @@
 # 🌀 一些上课的笔记
-<a href="https://github.com/curtisrecords/StudyNote"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-blue"></a>
-<a href="https://github.com/curtisrecords/StudyNote"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
+<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-blue"></a>
+<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
 
 # 关于Git的使用说明
 
