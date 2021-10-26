@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="app06.StudentMapper">
+    <resultMap id="studentMap" type="app06.Student">
+        <id property="id" column="stuId"/>
+        <result property="name" column="stuName"/>
+        <result property="sal" column="stuSal"/>
+    </resultMap>
+
+    <delete id="studentDelete" parameterType="app06.Student">
+        delete from student
+        <where>
+            <if test="id!=null">
+                stuId=#{id}
+            </if>
+        </where>
+    </delete>
+
+    <!-- 批量删除学生(id数组) -->
+    <delete id="studentDeleteByArray">
+        delete from student where stuId in
+        <!-- foreach标签
+             注：#{ids}表示数组中每个元素的值
+             delete from student where stuId in(1,4,7,9);
+        -->
+        <foreach collection="array" open="(" close=")" separator="," item="ids">
+            #{ids}
+        </foreach>
+    </delete>
+</mapper>
