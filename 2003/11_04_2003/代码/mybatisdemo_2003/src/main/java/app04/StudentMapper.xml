@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="app04.StudentMapper">
+    <resultMap id="studentMap" type="app04.Student">
+        <id property="id" column="stuId"/>
+        <result property="name" column="stuName"/>
+        <result property="sal" column="stuSal"/>
+    </resultMap>
+
+    <!-- 有条件的查询所有学生(动态SQL) 注：去掉第一个and或or -->
+    <select id="findAllByCondition" parameterType="map" resultMap="studentMap">
+        select * from student
+        <!--<where>
+             <if test="pid!=null">
+                and stuId=#{pid}
+             </if>
+             <if test="pname!=null and pname!=''">
+                 and stuName=#{pname}
+             </if>
+             <if test="psal!=null">
+                 and stuSal=#{psal}
+             </if>
+        </where>-->
+        <!-- 注：去掉第一个and|or -->
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="pid!=null">
+                and stuId=#{pid}
+            </if>
+            <if test="pname!=null and pname!=''">
+                and stuName=#{pname}
+            </if>
+            <if test="psal!=null">
+                and stuSal=#{psal}
+            </if>
+        </trim>
+    </select>
+</mapper>
