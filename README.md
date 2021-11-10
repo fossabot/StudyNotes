@@ -25,9 +25,10 @@
 > - 我选择了不同的平台 代码在这五个平台里面是 完全相同的 。
    请根据网络情况酌情选择。
 > - 第一个，第三个，和第四个；是我测试出来的最优解。
->   - ·[AGIT.AI](https://agit.ai/CurtisCN/StudyNotes)· 是不需要你登陆 可以直接Clone或 下载项目。
->   - ·[GITEE](https://gitee.com/CurtisCN/StudyNotes)· 需要你登陆才能下载项目工程包 这个是未来 所以最好注册一个账号，也不难。
->   - ·[CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true)· 无需登陆，可直接直链下载当日 (可能是昨日) 包含历史的所有压缩包。
+>   - [AGIT.AI](https://agit.ai/CurtisCN/StudyNotes) 是不需要你登陆 可以直接Clone或 下载项目。
+>   - [GITEE](https://gitee.com/CurtisCN/StudyNotes) 需要你登陆才能下载项目工程包 这个是未来 所以最好注册一个账号，也不难。
+>   - [CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true) 无需登陆，可直接直链下载当日 (可能是昨日) 包含历史的所有压缩包。
+>   - [GITHUB](https://github.com/curtisrecords/StudyNotes) 而 Github 是第一个更新的平台 需要一定的网络条件 国内同步代码均从Github拉取后互相同步 所以国内其他平台更新可能会照 Github 更新晚大概2-4个小时，如果着急的话就自备工具去Github拉取吧。
 
 
 ### 📄 4. 具体应该怎么下载？
