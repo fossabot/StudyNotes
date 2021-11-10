@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="app08.StudentMapper">
+    <!--<select id="getStudent" resultType="app08.Student">
+        select * from students
+    </select>-->
+
+    <!-- 方式一：按照子查询处理 -->
+    <select id="getStudent" resultMap="studentTeacher">
+        select * from students
+    </select>
+    <resultMap id="studentTeacher" type="app08.Student">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <!--
+            复杂的属性，我们需要单独处理
+                对象：association
+                集合：collection
+        -->
+        <association property="teacher" column="tid" javaType="app08.Teacher" select="getTeacher"/>
+    </resultMap>
+    <select id="getTeacher" resultType="app08.Teacher">
+        <!-- id=#{id}，#{id}相当于Student类中的tid -->
+        select * from teachers where id=#{id}
+    </select>
+</mapper>
