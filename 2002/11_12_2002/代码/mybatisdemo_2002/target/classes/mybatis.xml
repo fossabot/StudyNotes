@@ -6,6 +6,11 @@
     <!-- 加载类路径下的属性文件 -->
     <properties resource="database.properties"/>
 
+    <settings>
+        <!-- 开启二级缓存 -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
     <!-- 设置类型别名 -->
     <typeAliases>
         <typeAlias type="app01.Student" alias="student"/>
@@ -52,6 +57,7 @@
         <mapper resource="app08/TeacherMapper.xml"/>-->
         <!--<mapper resource="app09/StudentMapper.xml"/>
         <mapper resource="app09/TeacherMapper.xml"/>-->
-        <mapper resource="app10/StudentMapper.xml"/>
+        <!--<mapper resource="app10/StudentMapper.xml"/>-->
+        <mapper resource="app11/StudentMapper.xml"/>
     </mappers>
 </configuration>

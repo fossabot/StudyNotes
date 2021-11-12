@@ -14,4 +14,9 @@
     <select id="findAll" resultMap="studentMap">
         select * from student
     </select>
+
+    <!-- 修改学生 -->
+    <update id="update" parameterType="app10.Student">
+        update student set stuName=#{name} where stuId=#{id}
+    </update>
 </mapper>
