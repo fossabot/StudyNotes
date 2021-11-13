@@ -4,7 +4,7 @@
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
 
-> PDF版本请点击 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)。
+> PDF版本请点击 [金山文档](https://kdocs.cn/l/svo2MfPw10WR) 或者 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)。
 
 # 📚 关于Git的使用说明
 
