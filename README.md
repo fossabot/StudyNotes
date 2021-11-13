@@ -1,8 +1,12 @@
-# 🌀 一些上课的笔记
+# 🌀 上课的笔记
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-blue"></a>
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
+
+> PDF版本请点击 [金山文档](https://kdocs.cn/l/svo2MfPw10WR) 或者 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)。
+
+> 收藏项目请点击一个Star，谢谢；此外，如果想纠正一些笔记的错误，请点击Fork自己更改代码，提醒我合并；或者提一个issue，指出错误以及需要修改的代码片段。
 
 # 📚 关于Git的使用说明
 
@@ -28,7 +32,7 @@
 >   - [AGIT.AI](https://agit.ai/CurtisCN/StudyNotes) 是不需要你登陆 可以直接Clone或 下载项目。
 >   - [GITEE](https://gitee.com/CurtisCN/StudyNotes) 需要你登陆才能下载项目工程包 这个是未来 所以最好注册一个账号，也不难。
 >   - [CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true) 无需登陆，可直接直链下载当日 (可能是昨日) 包含历史的所有压缩包。
->   - [GITHUB](https://github.com/curtisrecords/StudyNotes) Github 是第一个更新的平台 需要一定的网络条件 国内同步代码均从Github拉取后互相同步 所以国内其他平台更新可能会照 Github 更新晚大概2-4个小时，如果着急的话就自备工具去Github拉取吧。
+>   - [GITHUB](https://github.com/curtisrecords/StudyNotes) Github 是第一个更新的平台 需要一定的网络条件 国内同步代码均从Github拉取后互相同步 所以国内其他平台更新可能会照 Github 更新晚大概2h-2d左右，如果着急的话就自备工具去Github拉取吧。
 
 
 ### 📄 4. 具体应该怎么下载？
@@ -40,9 +44,9 @@
 
 
 ```Bash
-git clone https://agit.ai/CurtisCN/StudyNotes.git
-git clone https://github.com/curtisrecords/StudyNotes.git
 git clone https://gitee.com/CurtisCN/StudyNotes.git
+git clone https://github.com/curtisrecords/StudyNotes.git
+git clone https://agit.ai/CurtisCN/StudyNotes.git
 ```
 
 
