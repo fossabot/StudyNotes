@@ -3,7 +3,7 @@
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
-> PDF版本请点击 [这里](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw)；(使用OneDrive) 共享文件。
+> PDF版本请点击 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)
 
 # 📚 关于Git的使用说明
 
