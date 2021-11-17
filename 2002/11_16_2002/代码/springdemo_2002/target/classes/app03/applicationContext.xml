@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用有参构造方法为属性赋值 -->
+    <!--<bean id="user" class="app03.User" scope="prototype">
+        <constructor-arg value="100"/>
+        <constructor-arg value="思莹"/>
+    </bean>-->
+
+    <!-- 使用属性的setter方法注入 -->
+    <bean id="user2" class="app03.User" scope="prototype">
+        <property name="id" value="101"/>
+        <property name="name" value="明鑫"/>
+    </bean>
+</beans>
