@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="app05.StudentMapper">
+    <resultMap id="studentMap" type="app05.Student">
+        <id property="id" column="stuId"/>
+        <result property="name" column="stuName"/>
+        <result property="sal" column="stuSal"/>
+    </resultMap>
+
+    <!-- 学生修改 -->
+    <update id="updateByCondition" parameterType="app05.Student">
+        update student
+        <!-- set标签：字段检测判断哪个是最后一个字段，然后会自动去掉最后一个"," -->
+        <set>
+            <if test="name!=null and name!=''">
+                stuName = #{name},
+            </if>
+            <if test="sal!=null">
+                stuSal= #{sal},
+            </if>
+        </set>
+        <where>
+            <if test="id!=null">
+                stuId= #{id}
+            </if>
+        </where>
+    </update>
+</mapper>

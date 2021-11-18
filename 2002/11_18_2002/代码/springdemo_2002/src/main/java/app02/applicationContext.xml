@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 默认无参构造器 -->
+    <!--<bean id="user1" class="app02.User"/>-->
+
+    <!-- 有参构造器 -->
+    <!--<bean id="user2" class="app02.User">
+        <constructor-arg index="0" type="java.lang.Integer" value="100"/>
+        <constructor-arg index="1" type="java.lang.String" value="美楠"/>
+    </bean>-->
+
+    <!--<bean id="str" class="java.lang.String">
+        <constructor-arg value="小玉"/>
+    </bean>-->
+    <!-- 有参构造器创建对象（其中有一个参数是一个bean） -->
+    <!--<bean id="user3" class="app02.User">
+        <constructor-arg index="0" type="java.lang.Integer" value="100"/>
+        <constructor-arg index="1" type="java.lang.String" ref="str"/>
+    </bean>-->
+
+    <!-- 第一个参数的bean -->
+    <!--<bean id="iid" class="java.lang.Integer">
+        <constructor-arg index="0" type="java.lang.String" value="101"/>
+    </bean>-->
+    <!-- 第二个参数的bean -->
+    <!--<bean id="str" class="java.lang.String">
+        <constructor-arg index="0" type="java.lang.String" value="宏达"/>
+    </bean>-->
+    <!-- 使用有参构造器创建对象（每一个参数都是一个bean） -->
+    <!--<bean id="user4" class="app02.User">
+        <constructor-arg index="0" ref="iid"/>
+        <constructor-arg index="1" ref="str"/>
+    </bean>-->
+
+    <!-- 工厂类创建对象 -->
+    <!-- 工厂类（实例方法） -->
+    <!-- 创建工厂 -->
+    <!--<bean id="factory" class="app02.ObjectFactory"/>-->
+    <!-- 再创建user对象，用factory的实例方法 -->
+    <!--<bean id="user5" factory-bean="factory" factory-method="getInstance"/>-->
+
+    <!-- 工厂类（静态方法）
+            class：指定的就是工厂类型
+            factory-method：一定是工厂类中的静态方法
+    -->
+    <bean id="user6" class="app02.ObjectFactory" factory-method="getStaticInstance"/>
+</beans>
