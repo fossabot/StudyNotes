@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 注册bean -->
+    <bean id="userService" class="app07.UserServiceImpl"/>
+    <bean id="log" class="app07.Log"/>
+    <bean id="afterLog" class="app07.AfterLog"/>
+
+    <!-- 配置AOP -->
+    <aop:config>
+        <!-- 配置切入点
+             定义方法：访问修饰符 返回值类型 方法名(参数列表){}
+             切入点表达式的语法结构：execution(方法修饰符  方法返回值 所属类 匹配方法名(方法中的形参表))
+         -->
+        <aop:pointcut id="pointcut" expression="execution(* app07.UserServiceImpl.*(..))"/>
+        <!-- 执行环绕添加 -->
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>
+    </aop:config>
+</beans>

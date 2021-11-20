@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 按照类型装配 -->
+    <!-- dao instance -->
+    <!--<bean id="userDao1" class="app04.UserDao"/>-->
+    <!-- service instance -->
+    <!--<bean id="userService1" class="app04.UserService"/>-->
+    <!-- action instance -->
+    <!--<bean id="userAction" class="app04.UserAction"/>-->
+
+    <!-- 按照名称装配 -->
+    <!-- dao instance -->
+    <bean id="userDao" class="app04.UserDao" autowire="byName"/>
+    <!-- service instance -->
+    <bean id="userService" class="app04.UserService" autowire="byName"/>
+    <!-- action instance -->
+    <bean id="userAction" class="app04.UserAction" autowire="byName"/>
+</beans>
