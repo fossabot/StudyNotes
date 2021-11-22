@@ -1,6 +1,7 @@
 # 🌀 上课的笔记
-<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-blue"></a>
-<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
+<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-black"></a>
+<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-black"></a>
+### 🚧(施工中) 2021.11.22 - 2021.12.01
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
 
