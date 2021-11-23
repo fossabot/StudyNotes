@@ -75,4 +75,5 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 🔗 [https://notes.cts.blue](https://notes.cts.blue)
 
 > 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步；即时同步的为海外平台GitHub。
+
 > 如没同步到当前平台上，请带上平台名称来提醒我Push一下代码。
