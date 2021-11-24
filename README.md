@@ -1,12 +1,26 @@
 # 🌀 上课的笔记
-<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-blue"></a>
-<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-blue"></a>
+<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-black"></a>
+<a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-black"></a>
+### 🚧 (施工中) 2021.11.22 - 2021.12.01
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
 
 > PDF版本请点击 [金山文档](https://kdocs.cn/l/svo2MfPw10WR) 或者 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)。
 
-> 收藏项目请点击一个Star，谢谢；此外，如果想纠正一些笔记的错误，请点击Fork自己更改代码，提醒我合并；或者提一个issue，指出错误以及需要修改的代码片段。
+> 这里是一些学习用项目，参照下面的Git安装教程；安装过后使用 `Git` 命令 `Clone` 如下项目。
+
+```text
+#Java
+https://github.com/Snailclimb/JavaGuide.git
+
+#Python
+https://github.com/jackfrued/Python-100-Days.git
+
+#TensorFlow
+https://github.com/Mikoto10032/DeepLearning.git
+```
+
+> 收藏项目请点击一个Star，谢谢；此外，如果想纠正一些笔记的错误，请点击Fork自己更改代码，提醒我合并；或者提一个issue，指出错误以及需要修改的代码片段;如果想自学，请参照上方开源项目搭建的[此网站](https://javaguide.cn/)。
 
 # 📚 关于Git的使用说明
 
@@ -44,9 +58,9 @@
 
 
 ```Bash
-git clone https://gitee.com/CurtisCN/StudyNotes.git
-git clone https://github.com/curtisrecords/StudyNotes.git
-git clone https://agit.ai/CurtisCN/StudyNotes.git
+git clone https://gitee.com/CurtisCN/StudyNotes.git #滞后≈1min
+git clone https://github.com/curtisrecords/StudyNotes.git #即时更新
+git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 ```
 
 
@@ -60,7 +74,6 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git
 
 🔗 [https://notes.cts.blue](https://notes.cts.blue)
 
-- 在这里哦！
+> 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步；即时同步的为海外平台GitHub。
 
-> 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步。
 > 如没同步到当前平台上，请带上平台名称来提醒我Push一下代码。
