@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册Action（必） -->
+    <bean name="/hello.action" class="app02.HelloAction"/>
+
+    <!--
+        如果Action中书写的是视图逻辑名称，那么视图解析器必须配置
+        如果Action中书写的是视图的完整名称，那么视图解析器就是可选配置
+     -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- /jsp/success.jsp -->
+        <!-- 路径前缀 -->
+        <property name="prefix" value="/jsp/"/>
+        <!-- 路径后缀 -->
+        <property name="suffix" value=".jsp"/>
+        <!-- 前缀 + 视图逻辑名 + 后缀 = 真实路径（/jsp/success.jsp） -->
+    </bean>
+</beans>
