@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespac属性是名称空间，必须全局唯一 -->
+<mapper namespace="app01.StudentMapper">
+    <!--
+            resultMap标签：映射的是实体类与表
+                type属性：表示实体类的全路径名
+                id属性：为实体类与表映射取一个任意唯一的名字
+     -->
+    <resultMap id="studentMap" type="app01.Student">
+        <!--
+            id标签：映射主键属性
+            result标签：映射非主键属性
+                property属性：实体类的属性
+                column属性：表的字段名
+        -->
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sal" column="sal"/>
+    </resultMap>
+
+    <!--
+        insert标签：要书写插入的SQL语句
+            id属性：为insert语句取一个任意唯一的名字
+            parameterType属性：要执行的dao方法的参数（如果是类必须使用全路径名）
+    -->
+    <insert id="add1">
+        insert into student values(1,'家辉',7000)
+    </insert>
+
+    <insert id="add2" parameterType="student">
+        insert into student(id,name,sal) values (#{id},#{name},#{sal})
+    </insert>
+</mapper>
