@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>属性选择器</title>
+		<style>
+			/* 1.利用属性选择器可以不借助类和id选择器 */
+			/* div[id]{
+				color: pink;
+			} */
+			/* 2.属性选择器还可以选择属性=值的用法 */
+			/* input[name=newsletter]{
+				color: pink;
+			} */
+			/* 3.属性选择器可以选择属性值开头的某些元素 */
+			/* input[name^=news]{
+				color: pink;
+			} */
+			/* 4.属性选择器可以选择器属性值结尾的某些元素 */
+			input[name$=letter]{
+				color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="test">只要学不死就往死里学</div>
+		<input type="text" name="newsletter" />
+		<input type="text" name="showletter" />
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="index.html" method="get">
+			<p>
+				<!-- 方式一 -->
+				<label for="myname">名字：</label>
+				<input id="myname" name="name" type="text" value=""/>
+			</p>
+			<p>
+				<!-- 方式二 -->
+				<label>姓氏：<input name="firstName" type="text" /></label>
+			</p>
+			<p>
+				登录名：<input name="loginName" type="text" />
+				（可包含a-z,0-9,下划线）
+			</p>
+			<p>
+				密码：<input name="password" type="password" />
+				（密码不能少于6位）
+			</p>
+			<p>
+				再次输入密码：<input name="repassword" type="password" />
+			</p>
+			<p>
+				性别：<input name="sex" type="radio" value="0" />男&nbsp;
+				<input name="sex" type="radio" value="1" checked="checked" />女
+			</p>
+			<p>
+				爱好：<input name="hobby" type="checkbox" value="1" />打篮球&nbsp;
+				<input name="hobby" type="checkbox" value="2" checked="checked" />健身&nbsp;
+				<input name="hobby" type="checkbox" value="3" />吃鸡
+			</p>
+			<p>
+				<input type="file" />
+				<input name="hidden" type="hidden" value="1" />
+			</p>
+			籍贯：<select name="citys">
+					<option value="">-请选择-</option>
+					<option value="1">沈阳市</option>
+					<option value="2" selected="selected">本溪市</option>
+					<option value="3">铁岭市</option>
+					<option value="4">丹东市</option>
+				 </select>
+			<p>
+				<textarea name="textContent" cols="35" rows="10"></textarea>
+			</p>
+			<p>
+				<input type="submit" value="提交" />&nbsp;<input type="reset" value="重置" />
+				&nbsp;<input type="button" value="点我吧" onclick="btnClick();" />
+			</p>
+		</form>
+		
+		<script>
+				function btnClick(){
+					//警告框
+					alert("大数据2002");
+				}
+		</script>
+	</body>
+</html>
