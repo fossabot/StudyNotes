@@ -66,9 +66,8 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 
 ## ❓ *2. Git 的 安装 以及 使用教程* 
 
-🔗 [https://www.cnblogs.com/ximiaomiao/p/7140456.html](https://www.cnblogs.com/ximiaomiao/p/7140456.html)
-
-- 前人已经写过了，我就不重复造轮子了。
+ - 🔗 [Git安装 'Windows'](https://www.cnblogs.com/ximiaomiao/p/7140456.html)
+ - 🔗 [Git 学习课程](https://oschina.gitee.io/learn-git-branching/)
 
 ## ❓ *3. 具体 网址链接 在哪里？* 
 
