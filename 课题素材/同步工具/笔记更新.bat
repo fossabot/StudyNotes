@@ -15,8 +15,10 @@ goto :eof
 
 :1
 echo 完全下载 (Clone)
-echo 请确认你是否已经安装git.
 echo 确定继续吗?
+echo 1. 请保证此脚本文件是在桌面上的 且你之前Clone的学习文件也在桌面，否则可能导致脚本运行错误。
+echo 2. 请确认你没有动过笔记目录下的.git的隐藏文件夹。
+echo 3. 请确认你是否已经安装Git.
 pause
 git clone https://gitee.com/CurtisCN/StudyNotes.git
 echo 代码下载 (Clone) 完成。
@@ -27,7 +29,7 @@ exit
 echo 增量更新 (Pull) 
 echo 1. 请保证此脚本文件是在桌面上的 且你之前Clone的学习文件也在桌面，否则可能导致脚本运行错误。
 echo 2. 请确认你没有动过笔记目录下的.git的隐藏文件夹。
-echo 3. 请确认你是否已经安装git.
+echo 3. 请确认你是否已经安装Git.
 echo 确定继续吗?
 pause
 cd StudyNotes
