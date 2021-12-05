@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 扫描service相关的bean -->
+    <context:component-scan base-package="" />
+
+    <!-- 声明式事务配置 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 注入数据库连接池 -->
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- aop事务支持 -->
+    <!-- 配置事务通知，即让哪些方法需要事务支持 -->
+    <tx:advice id="tx" transaction-manager="transactionManager">
+         <tx:attributes>
+             <tx:method name="*" propagation="REQUIRED"/>
+         </tx:attributes>
+    </tx:advice>
+
+    <!-- 配置事务切面，即让哪些包下的类需要事务 -->
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.lnboxue.service.*.*(..))"/>
+        <aop:advisor advice-ref="tx" pointcut-ref="pointcut"/>
+    </aop:config>
+</beans>
