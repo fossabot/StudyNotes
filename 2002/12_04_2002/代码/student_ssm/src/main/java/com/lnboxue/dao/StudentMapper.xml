@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lnboxue.dao.StudentMapper">
+    <resultMap id="studentMap" type="Student" >
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="password" property="password"/>
+        <result column="sex" property="sex"/>
+        <result column="clazz" property="clazz"/>
+        <result column="birthday" property="birthday"/>
+        <collection property="scores" ofType="Score">
+            <result column="courseid" property="courseId"/>
+            <result column="score" property="score"/>
+            <association property="course" javaType="Course">
+                <result column="cname" property="name"/>
+            </association>
+        </collection>
+    </resultMap>
+
+    <select id="login" resultMap="studentMap"  parameterType="string" >
+        select id,name,password,sex,clazz,birthday from student where name=#{name} and password=#{pwd}
+    </select>
+
+    <select id="list" resultMap="studentMap">
+        SELECT s.*,sc.`course_id` AS courseid,sc.`score` AS score,c.`name` AS cname
+        FROM student s
+        LEFT OUTER JOIN
+        score sc ON s.id=sc.`student_id`
+        LEFT OUTER JOIN
+        course c ON sc.`course_id`=c.`id`
+    </select>
+
+    <insert id="insert" parameterType="Student">
+        insert into student
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="name != null" >
+                name,
+            </if>
+            <if test="password != null" >
+                password,
+            </if>
+            <if test="sex != null" >
+                sex,
+            </if>
+            <if test="clazz != null" >
+                clazz,
+            </if>
+            <if test="birthday != null" >
+                birthday,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id},
+            </if>
+            <if test="name != null" >
+                #{name},
+            </if>
+            <if test="password != null" >
+                #{password},
+            </if>
+            <if test="sex != null" >
+                #{sex},
+            </if>
+            <if test="clazz != null" >
+                #{clazz},
+            </if>
+            <if test="birthday != null" >
+                #{birthday},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findById" resultMap="studentMap">
+        select id, name, password, sex, clazz, birthday from student where id = #{id}
+    </select>
+
+    <update id="update" parameterType="Student">
+        update student
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="clazz != null">
+                clazz = #{clazz},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="delete">
+        delete from student where id = #{id}
+    </delete>
+</mapper>
