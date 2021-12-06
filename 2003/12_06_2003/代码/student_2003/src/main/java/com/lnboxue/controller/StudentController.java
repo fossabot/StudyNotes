@@ -7,6 +7,7 @@ import com.lnboxue.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -76,8 +77,19 @@ public class StudentController {
         return "redirect:/student/toError";
     }
 
-    @RequestMapping("/delete")
+    /*@RequestMapping("/delete")
     public String delete(int id){
+        //调用业务层中的删除方法
+        if (studentService.delete(id)){
+            //重定向到学生分页的action
+            return "redirect:/student/list";
+        }
+        //重定向到数据库错误页面
+        return "redirect:/student/toError";
+    }*/
+
+    @RequestMapping("/delete/{id}")
+    public String delete(@PathVariable Integer id){
         //调用业务层中的删除方法
         if (studentService.delete(id)){
             //重定向到学生分页的action

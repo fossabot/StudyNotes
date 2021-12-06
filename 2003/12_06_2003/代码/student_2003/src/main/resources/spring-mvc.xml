@@ -42,4 +42,12 @@
     <!-- 扫描web相关的bean -->
     <context:component-scan base-package="com.lnboxue.controller" />
 
+    <!-- 配置拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/student/**"/>
+            <mvc:mapping path="/teacher/**"/>
+            <bean class="com.lnboxue.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

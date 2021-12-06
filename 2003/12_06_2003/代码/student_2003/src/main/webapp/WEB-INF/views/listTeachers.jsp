@@ -22,20 +22,20 @@
         <td>教授课程</td>
         <td>编辑</td>
     </tr>
-    
+    <c:forEach items="${pageInfo.list}" var="teacher">
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>${teacher.id}</td>
+            <td>${teacher.name}</td>
+            <td>${teacher.sex==0?'男':'女'}</td>
+            <td>${teacher.professional}</td>
+            <td>${teacher.birthday}</td>
+            <td>${teacher.salary}</td>
+            <td>${teacher.course.name}</td>
             <td><a href="">删除</a>
                 <a href="">修改</a>
             </td>
         </tr>
-    
+    </c:forEach>
 </table>
 <div class="row">
     <div class="col-md-6">

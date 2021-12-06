@@ -36,7 +36,8 @@
                     <c:out value="${sc.course.name}"/>&nbsp;&nbsp;<c:out value="${sc.score}"/><br/>
                 </c:forEach>
             </td>
-            <td><a href="${pageContext.request.contextPath}/student/delete?id=${student.id}">删除</a>
+            <td><%--<a href="${pageContext.request.contextPath}/student/delete?id=${student.id}">删除</a>--%>
+                <a href="${pageContext.request.contextPath}/student/delete/${student.id}">删除</a>
                 <a href="${pageContext.request.contextPath}/student/toUpdate?id=${student.id}">修改</a>
             </td>
         </tr>

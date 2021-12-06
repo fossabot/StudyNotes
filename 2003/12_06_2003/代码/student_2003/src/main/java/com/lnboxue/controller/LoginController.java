@@ -54,8 +54,11 @@ public class LoginController {
                     HttpSession session = request.getSession();
                     //将用户名保存到Session对象中
                     session.setAttribute("username",username);
-                    return "listTeachers";
+                    //重定向到教师分页查询的action
+                    //return "listTeachers";
+                    return "redirect:/teacher/list";
                 } else {
+                    //跳转到登录页
                     return "login";
                 }
             }

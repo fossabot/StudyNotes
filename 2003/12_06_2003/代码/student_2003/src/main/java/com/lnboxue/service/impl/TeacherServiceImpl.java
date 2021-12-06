@@ -6,6 +6,8 @@ import com.lnboxue.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TeacherServiceImpl implements TeacherService {
 
@@ -15,5 +17,10 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public Teacher login(String name, String pwd) {
         return teacherMapper.login(name,pwd);
+    }
+
+    @Override
+    public List<Teacher> list() {
+        return teacherMapper.list();
     }
 }
