@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<input type="text" value="加载页面时获取光标并选中所有文字" size="50"/>
+
+	<script type="text/javascript">
+		//1)加载页面时获取光标并选中所有文字
+		$(function () {
+			//光标定位到文本框
+			//$(":text").focus();
+			//选中文本框中的所有文本
+			$(":text").select();
+		});
+	</script>
+</body>
+</html>

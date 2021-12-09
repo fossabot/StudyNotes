@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简化创建自定义对象的方式</title>
+</head>
+<body>
+	<!-- js方式定义Person对象 -->
+	<script type="text/javascript">
+		/*function Person(id,name,sal) {
+			this.id = id;
+			this.name = name;
+			this.sal = sal;
+		}
+		var p = new Person(1,"明鑫",7000);
+		document.write("编号：" + p.id + "<br/>");
+		document.write("姓名：" + p.name + "<br/>");
+		document.write("薪水：" + p.sal + "<br/>");*/
+	</script>
+
+	<hr/>
+
+	<!-- json方式定义Person对象 -->
+	<script type="text/javascript">
+		var p = {
+			id:1,
+			name:"俊奇",
+			sal:8000
+		}
+		//属性：可以''或""符号，字符串必加''或""符号，其它类型不要加符号
+		document.write("编号：" + p.id + "<br/>");
+		document.write("姓名：" + p.name + "<br/>");
+		document.write("薪水：" + p.sal + "<br/>");
+	</script>
+</body>
+</html>
