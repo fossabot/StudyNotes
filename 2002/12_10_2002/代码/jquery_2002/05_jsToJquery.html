@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js对象和jQuery对象的相互转换</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<input id="inputID" type="button" value="这是jQuery框架，写少代码，多做事情"/>
+
+	<div id="divID">哈哈</div>
+
+	<script type="text/javascript">
+		//获取<input>标签中value属性的内容[js->jQuery对象]
+		/*var inputElement = document.getElementById("inputID"); //js对象
+		var $input = $(inputElement);
+		var input = $input.val();
+		alert(input);*/
+
+		//获取<div>标签中文本内容[jQuery->js对象]
+		var $div = $("#divID");
+		//方式一：索引
+		//var divElement = $div[0]; //js对象
+		//方式二：get(index)
+		var divElement = $div.get(0);
+		var div = divElement.innerHTML;
+		alert(div);
+	</script>
+</body>
+</html>
