@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		//将js方式的onload与jquery方式ready对比，哪个快
+		//将js方式的onload与jquery方式ready对比，哪个快
+
+		//JavaScript
+		window.onload = function () {
+			alert("传统方式...");
+		}
+
+		//jQuery
+		/*$(document).ready(function () {
+			alert("现代方式...");
+		});*/
+
+		//简便方法
+		$(function () {
+			alert("现代方式...");
+		});
+	</script>
+</body>
+</html>

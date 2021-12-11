@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<table border="1" align="center">
+	<tr>
+		<td>
+			<div style="width: 165px;height: 23px">
+				双击会被替换成文本框
+			</div>
+		</td>
+		<td>
+			不会变
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+	//1)双击<div>中的文本，用文本框替换文本
+	$("div").dblclick(function () {
+		//定义一个文本框（jQuery元素）
+		var $text = $("<input type='text' style='width: 165px;height: 23px'/>");
+		//使用文本框替换文本
+		$(this).replaceWith($text);
+	});
+</script>
+</body>
+</html>
