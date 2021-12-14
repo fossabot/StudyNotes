@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<select id="city">
+		<option value="bj">北京</option>
+		<option value="sh">上海</option>
+		<option value="gz">广州</option>
+	</select>
+
+	<script type="text/javascript">
+		//1)当<select>标签触发onchange事件，显示选中<option>的value和innerHTML属性值
+		$("#city").change(function () {
+			//获取选中的option标签对象
+			var $option = $("#city option:selected");
+			//获取option的值
+			var value = $option.val();
+			//获取option标签中的文本信息
+			var text = $option.text();
+			alert(value + ":" + text);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本加强型选择器</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li><a>list item 1</a></li>
+		<li>list item 2</li>
+		<li>list item 3</li>
+		<li>list item 4</li>
+		<li>list item 5</li>
+	</ul>
+
+	<input type="checkbox" checked="checked"/>
+	<input type="checkbox" checked="checked"/>
+	<input type="checkbox"/>
+
+	<table border="1">
+		<tr><td>line1[0]</td></tr>
+		<tr><td>line2[1]</td></tr>
+		<tr><td>line3[2]</td></tr>
+		<tr><td>line4[3]</td></tr>
+		<tr><td>line5[4]</td></tr>
+		<tr><td>line6[5]</td></tr>
+	</table>
+
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+
+	<p>p</p>
+
+	<script type="text/javascript">
+		//1)查找UL中第一个元素的内容
+		//获取标签中的html元素
+		//alert($("ul li:first").html());
+		//获取标签中的文本内容
+		//alert($("ul li:first").text());
+
+		//2)查找UL中最后一个元素的内容
+		//html()方法用于html/jsp，不能用在xml
+		//text()方法既能用于html/jsp，且能用于xml
+		//alert($("ul li:last").text());
+
+		//3)查找表格的索引号为1、3、5...奇数行个数，索引号从0开始
+		//alert($("table tr:odd").length);
+
+		//4)查找表格的索引号为2、4、6...偶数行个数，索引号从0开始
+		//alert($("table tr:even").length);
+
+		//5)查找表格中第二行的内容，从索引号0开始，这是一种祖先 后代 的变化形式
+		//alert($("table tr:eq(1)").text());
+
+		//6)查找表格中索引号大于0的个数 大于：gt=>greater than 小于：lt=>less than
+		alert($("table tr:gt(0)").length);
+	</script>
+</body>
+</html>

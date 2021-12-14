@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<p>
+		<img src="../images/girl.jpg"/>
+	</p>
+
+
+	<script type="text/javascript">
+		//1)图片隐藏
+		$("img").hide();
+		//休息3秒再显示 单位：毫秒
+		window.setTimeout(function () {
+			//图片显示
+			$("img").show(5000);
+		},3000);
+	</script>
+</body>
+</html>

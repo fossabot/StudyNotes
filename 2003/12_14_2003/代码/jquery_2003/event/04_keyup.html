@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	//1)当按键弹起时，显示所按键的unicode码
+	$(function () {
+		//浏览器会自动创建一个event事件对象，那么开发人员可以根据需要来使用该event对象
+		$(document).keyup(function (event) {
+			//获取按键的unicode码 jquery-1.8.3.js
+			//var code = event.keyCode;
+			var code = event.which; //回车键为13
+			alert(code);
+		});
+	});
+</script>
+</body>
+</html>

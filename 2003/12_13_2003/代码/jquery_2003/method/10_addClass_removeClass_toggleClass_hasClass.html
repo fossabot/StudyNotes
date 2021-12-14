@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		.myClass{
+			font-size: 30px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>无样式</div>
+
+	<div class="myClass">有样式</div>
+
+	<script type="text/javascript">
+		//1)为无样式的DIV添加样式
+		//$("div:first").addClass("myClass");
+
+		//2)为有样式的DIV删除样式
+		//$("div:last").removeClass("myClass");
+
+		//3)切换样式即有样式的变成无样式，无样式的变成有样式
+		//$("div").toggleClass("myClass");
+
+		//4)最后一个DIV是否有样式
+		var flag = $("div:last").hasClass("myClass");
+		alert(flag?"有样式":"无样式");
+	</script>
+</body>
+</html>
