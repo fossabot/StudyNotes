@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<input type="button" value="原按钮"/>
+
+<script type="text/javascript">
+	//1)复制原input元素，添加到input的元素后，与其同级
+	/*var $old = $(":button");
+	var $new = $old.clone();
+	//修改按钮的文本
+	$new.val("新按钮");
+	//兄弟关系
+	$old.after($new);*/
+
+	//2)为原input元素动态添加单击事件
+	/*var $old = $(":button");
+	//js：onclick，为原按钮添加单击事件
+	$old.click(function () {
+		alert("动态事件...");
+	});*/
+
+	//3)添加到原input元素后，与其同级，且和原来按钮一样的行为
+	var $old = $(":button");
+	//为原按钮添加点击事件
+	$old.click(function () {
+		alert("动态事件...");
+	});
+	//true：既复制行为，也复制样式
+	var $new = $old.clone(true);
+	$new.val("新按钮");
+	$old.after($new);
+</script>
+</body>
+</html>

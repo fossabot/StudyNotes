@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>创建一个数组，数组中有三个对象</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var ps = [
+			{
+				id:1,
+				name:'天宇'
+			},
+			{
+				id:2,
+				name:'刘鉴'
+			},
+			{
+				id:3,
+				name:'礼浩'
+			}
+		];
+	</script>
+
+	<script type="text/javascript">
+		document.write("共有" + ps.length + "个学生<br/>");
+		//循环遍历
+		for (var i=0;i<ps.length;i++){
+			document.write("编号：" + ps[i].id + "<br/>");
+			document.write("姓名：" + ps[i].name + "<br/>");
+		}
+	</script>
+</body>
+</html>
