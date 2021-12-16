@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<!-- <body onload="ready();"> -->
+	<body id="bodyNode">
+		<!-- 
+		  JavaScript事件的注册方式
+		  方式一：直接在html注册
+		  例如：<body onload="ready();"></body>
+		  方式二：可以使用JavaScript代码找到对应的对象进行注册（推荐使用）
+		 -->
+		<script>
+			/* function ready(){
+				alert("body元素被加载了...");
+			} */
+			//获取body元素并绑定onload事件(方式二)
+			document.getElementById("bodyNode").onload = function(){
+				alert("body元素被加载了...");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="userName" value="请输入用户名..." /><input type="button" onclick="showText()" value="设置文本"/>
+		<hr/>
+    
+		<img src="" />
+		<img src="" />
+		<img src="" />
+		<input type="button" onclick="showImage()" value="显示图片"/>
+		<hr/>
+		<div name="info"></div>
+		<div name="info"></div>
+		<div name="info"></div>
+		<input type="button" onclick="showDiv()" value="设置div内容"/>
+	
+		<script>
+			/**
+			 * JavaScript操作DOM元素的常见方法
+			 * 1.document.getElementById()：按照DOM元素id进行查找
+			 * 2.document.getElementsByTagName()：通过DOM元素的标签名称进行查找(集合)
+			 * 3.docoment.getElementsByName()：通过DOM元素的name进行查找(集合)
+			 */
+			function showText(){
+				//获取input标签对象
+				var username = document.getElementById("userName");
+				//设置文本框中的value值
+				username.value = "文本已经设置完毕";
+			}
+			
+			function showImage(){
+				//获取图片集合
+				var images = document.getElementsByTagName("img");
+				//循环遍历
+				for(var i=0;i<images.length;i++){
+					//为图片的属性赋值
+					images[i].src = "img/33.jpg";
+					//设置图片的高度
+					images[i].height = "100";
+					//设置图片的宽度
+					images[i].width = "100";
+				}
+			}
+			
+			function showDiv(){
+				//获取div元素集合
+				var divs = document.getElementsByName("info");
+				//循环遍历
+				for(var i=0;i<divs.length;i++){
+					//html()<=>innerHTML
+					divs[i].innerHTML = "春然".fontcolor("blue");
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//confirm():确认框
+			if (confirm("确定吗？")) {
+				//prompt():输入框
+				var j = prompt("请输入一个数字：",1);
+				for(var i=0;i<j;i++){
+					document.write(i + "&nbsp;");
+				}
+			} else {
+				alert("您没有同意！")
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="textNode" type="text"/>
+		
+		<script>
+			/**
+			 * javascript的变量声明
+			 * 语法：var 变量名 = 数据;
+			 * 声明变量需要注意的事项
+			 * 1.在JavaScript中声明变量是使用var关键字声明，
+			 * 	 JavaScript中的变量可以存储任意数据类型的数据
+			 * 2.JavaScript中的变量的数据类型是根据存储的值决定的
+			 *   可以随时更改存储的数据类型
+			 * 3.定义多个同名变量时，后定义的变量会覆盖前面的同名变量
+			 * 4.声明变量的时候可以省略var关键字，但是建议不省略
+			 */
+			/**
+			 * JavaScript中使用typeof查看变量的数据类型
+			 * 语法: 
+			 * typeof 变量名;
+			 */
+			/**
+			 * JavaScript中的数据类型
+			 * 1.number：数值类型
+			 * 2.boolean：布尔类型
+			 * 3.string：字符串类型
+			 * 4.undefined：未定义类型
+			 * 5.object：对象类型
+			 * 6.null：空对象
+			 */
+			
+			//var a = 1;
+			//var a = 3.14;
+			//var a = true;
+			//a = "晓亮";
+			//var a;
+			//a = 1;
+			//获取input标签对象
+			var inputNode =  document.getElementById("textNode1");
+			//document.write("a数据类型是：" + typeof a + "<br/>");
+			/* document.write("inputNode数据类型是：" 
+			+ typeof inputNode + "<br/>"); */
+			alert(inputNode);
+		</script>
+	</body>
+</html>

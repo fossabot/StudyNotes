@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子元素选择器</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>John</li>
+		<li>Karl</li>
+		<li>Brandon</li>
+	</ul>
+	<ul>
+		<li>Glen</li>
+		<li>Tane</li>
+		<li>Ralph</li>
+	</ul>
+	<ul>
+		<li>Jack</li>
+	</ul>
+	<ul>
+		<li>Marry</li>
+	</ul>
+
+	<script type="text/javascript">
+		//1)迭代[each]每个ul中第一个li元素中的内容，索引从1开始
+		/*$("ul li:first-child").each(function () {
+			alert($(this).text());
+		});*/
+
+		//2)迭代[each]每个ul中最后一个li元素中的内容，索引从1开始
+		/*$("ul li:last-child").each(function () {
+			alert($(this).text());
+		});*/
+
+		//3)迭代[each]每个ul中第二个li元素中的内容，索引从1开始
+		/*$("ul li:nth-child(2)").each(function () {
+			alert($(this).text());
+		});*/
+
+		//4)迭代[each]每个ul中只有一个孩子li元素中的内容，索引从1开始
+		$("ul li:only-child").each(function () {
+			alert($(this).text());
+		});
+	</script>
+</body>
+</html>

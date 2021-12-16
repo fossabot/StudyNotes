@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		省份<select id="province" onchange="showCity()">
+    		<option>省份</option>
+    		<option>辽宁</option>
+            <option>吉林</option>
+            <option>黑龙江</option>
+    	</select>
+		城市<select id="city"><option>城市</option></select>
+		
+		<script>
+			function showCity(){
+				//构造城市
+				var citys = [[],["沈阳","大连","本溪"],["长春","吉林","四平"],["哈尔滨","牡丹江","佳木斯"]];
+				//获取省份
+				var province = document.getElementById("province");
+				//获取省份所对应的下标
+				var selectIndex = province.selectedIndex;
+				//获取城市
+				var city = document.getElementById("city");
+				//获取某省份对应城市的集合
+				var cityData = citys[selectIndex];
+				//清空上一次的城市
+				city.options.length = 1;
+				//遍历城市数组
+				for(var i=0;i<cityData.length;i++){
+					//创建option标签对象
+					var optionNode = document.createElement("option");
+					//在option标签中填充城市
+					optionNode.innerHTML = cityData[i];
+					//将option元素添加到select标签中(父子关系)
+					city.appendChild(optionNode);
+				}
+			}
+		</script>
+	</body>
+</html>
