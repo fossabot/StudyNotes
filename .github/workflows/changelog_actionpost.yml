@@ -1,3 +1,5 @@
+- name: git-cliff - Changelog Generator
+  uses: orhun/git-cliff-action@v1.1.6
 jobs:
   changelog:
     name: Generate changelog
