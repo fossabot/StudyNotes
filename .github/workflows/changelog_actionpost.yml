@@ -1,11 +1,10 @@
-name: Action Test
-
+name: curtisrecords_action_post_changelog
 on: [push]
 
 jobs:
   git-cliff-action:
     runs-on: ubuntu-latest
-    name: Test the git-cliff changelog generator action
+    name: git-cliff changelog generator action
     steps:
       - name: Checkout
         uses: actions/checkout@v2
