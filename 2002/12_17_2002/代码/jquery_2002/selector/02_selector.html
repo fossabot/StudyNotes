@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层次选择器</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<form action="">
+		<input type="text" value="a"/>
+		<table>
+			<tr>
+				<td>
+					<input type="checkbox" value="b"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<input type="radio" value="c"/>
+	<input type="radio" value="d"/>
+	<input type="radio" value="e"/>
+
+	<script type="text/javascript">
+		//1)找到表单form下所有的input元素的个数
+		//alert($("form input").length);
+
+		//2)找到form表单里所有的子集input的元素个数
+		//alert($("form>input").length);
+
+		//3)找到表单form同级的第一个input元素的value属性值
+		//alert($("form+input").val());
+
+		//4)找到所有与表单form同级的input元素的个数
+		alert($("form~input").length);
+	</script>
+</body>
+</html>

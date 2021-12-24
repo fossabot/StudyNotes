@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="#">标题1</a>
+		<a href="#">标题2</a>
+		<a href="#">标题3</a>
+		<input type="button" onClick="writeUrl()" value="设置a标的地址"/>
+	
+		<script>
+			function writeUrl(){
+				//获取超链接数组
+				var links = document.links;
+				//循环遍历
+				for(var i=0;i<links.length;i++){
+					//设置超链接中的href属性
+					//links[i].href = "http://www.baidu.com";
+					links[i].href = "index.html";
+				}
+			}
+		</script>
+	</body>
+</html>

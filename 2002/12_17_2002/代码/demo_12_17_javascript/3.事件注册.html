@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<!-- <body onload="ready();"> -->
+	<body id="bodyNode">
+		<!-- 
+			事件的注册
+			1.在html标签上进行注册
+			2.先找到该html元素，再进行注册
+		 -->
+		<script>
+			/* function ready(){
+				alert("body标签被加载了...");
+			} */
+			document.getElementById("bodyNode").onload = function(){
+				alert("body标签被加载了...");
+			}
+		</script>
+	</body>
+</html>
