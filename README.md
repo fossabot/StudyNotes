@@ -4,22 +4,26 @@
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
 
+> 电脑重装系统或者因为其他原因丢失开发环境的 请到此处 [👉阿里云盘👈](https://www.aliyundrive.com/s/XPkN5oMox2P) 进行下载。
+
 > PDF版本请点击 [金山文档](https://kdocs.cn/l/svo2MfPw10WR) 或者 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)。
 
 > 这里是一些学习用项目，参照下面的Git安装教程；安装过后使用 `Git` 命令 `Clone` 如下项目。
 
 ```text
 #Java
-https://github.com/Snailclimb/JavaGuide.git
+git clone https://github.com/Snailclimb/JavaGuide.git
 
 #Python
-https://github.com/jackfrued/Python-100-Days.git
+git clone https://github.com/jackfrued/Python-100-Days.git
 
 #TensorFlow
-https://github.com/Mikoto10032/DeepLearning.git
+git clone https://github.com/Mikoto10032/DeepLearning.git
 ```
 
-> 收藏项目请点击一个Star，谢谢；此外，如果想纠正一些笔记的错误，请点击Fork自己更改代码，提醒我合并；或者提一个issue，指出错误以及需要修改的代码片段;如果想自学，请参照上方开源项目搭建的[此网站](https://javaguide.cn/)。
+> 收藏项目请点击一个Star，谢谢；此外，如果想纠正一些笔记的错误，请在 GitHub 点击 Fork 修改内容，提交PR提醒我合并；或者提一个issue，指出错误以及需要修改的代码片段;
+
+> 如果想自学，请参照上方开源项目搭建的[此网站](https://javaguide.cn/)。
 
 # 📚 关于Git的使用说明
 
@@ -33,7 +37,7 @@ https://github.com/Mikoto10032/DeepLearning.git
 ### 📄 2. 为什么要注册Gitee？
 
 > A：因为 `Gitee` 为国内较好的代码分享平台，在国内这种大环境下 `Gitee` 是最优选。
-如果你经常上外网，那对于你来说 `Github` 才是最优选。
+如果你经常科学上网，那对于你来说 `Github` 才是最优选。
 
 
 ### 📄 3. 为什么你的页面上有这么多选项？ 我应该选哪个？
@@ -44,8 +48,9 @@ https://github.com/Mikoto10032/DeepLearning.git
 > - 第一个，第三个，和第四个；是我测试出来的最优解。
 >   - [AGIT.AI](https://agit.ai/CurtisCN/StudyNotes) 是不需要你登陆 可以直接Clone或 下载项目。
 >   - [GITEE](https://gitee.com/CurtisCN/StudyNotes) 需要你登陆才能下载项目工程包 这个是未来 所以最好注册一个账号，也不难。
->   - [CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true) 无需登陆，可直接直链下载当日 (可能是昨日) 包含历史的所有压缩包。
+>   - [CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true) 无需登陆，可直接直链下载项目的压缩包。
 >   - [GITHUB](https://github.com/curtisrecords/StudyNotes) Github 是第一个更新的平台 需要一定的网络条件 国内同步代码均从Github拉取后互相同步 所以国内其他平台更新可能会照 Github 更新晚大概2h-2d左右，如果着急的话就自备工具去Github拉取吧。
+>   - [AliyunDrive](https://www.aliyundrive.com/s/XPkN5oMox2P) 开发环境由于重装系统又或者其他原因丢失掉原环境的 这里有阿里云盘 免去某网盘几十kb的下载速度。
 
 
 ### 📄 4. 具体应该怎么下载？
@@ -72,6 +77,6 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 
 🔗 [https://notes.cts.blue](https://notes.cts.blue)
 
-> 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步；即时同步的为海外平台GitHub。
+> 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步；首先提交的为海外平台GitHub；而后国内各个平台自动从GitHub拉取Git更新。
 
 > 如没同步到当前平台上，请带上平台名称来提醒我Push一下代码。
