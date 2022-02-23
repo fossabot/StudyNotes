@@ -4,7 +4,7 @@
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
 
-> 电脑重装系统或者因为其他原因丢失开发环境的 请到此处 [👉阿里云盘👈](https://www.aliyundrive.com/s/XPkN5oMox2P) 进行下载。
+> 电脑重装系统或者因为其他原因丢失开发环境的 请到此处 [👉阿里云盘👈](https://alist.cts.blue) 进行下载。
 
 > PDF版本请点击 [金山文档](https://kdocs.cn/l/svo2MfPw10WR) 或者 [OneDrive](https://1drv.ms/b/s!AoGkv01Rkw7qg81Wm7SkOwclFU3bsw) 或者 [GoogleDrive](https://drive.google.com/file/d/1n2nNNcprqHeoKWHIYhAqkQ0vh366FKUY/view?usp=sharing)。
 
@@ -50,7 +50,7 @@ git clone https://github.com/Mikoto10032/DeepLearning.git
 >   - [GITEE](https://gitee.com/CurtisCN/StudyNotes) 需要你登陆才能下载项目工程包 这个是未来 所以最好注册一个账号，也不难。
 >   - [CODING.NET](https://curtiscn.coding.net/p/Notes/d/StudyNotes/git/archive/main/?download=true) 无需登陆，可直接直链下载项目的压缩包。
 >   - [GITHUB](https://github.com/curtisrecords/StudyNotes) Github 是第一个更新的平台 需要一定的网络条件 国内同步代码均从Github拉取后互相同步 所以国内其他平台更新可能会照 Github 更新晚大概2h-2d左右，如果着急的话就自备工具去Github拉取吧。
->   - [AliyunDrive](https://www.aliyundrive.com/s/XPkN5oMox2P) 开发环境由于重装系统又或者其他原因丢失掉原环境的 这里有阿里云盘 免去某网盘几十kb的下载速度。
+>   - [AliyunDrive](https://alist.cts.blue) 开发环境由于重装系统又或者其他原因丢失掉原环境的 这里有阿里云盘 免去某网盘几十kb的下载速度。
 
 
 ### 📄 4. 具体应该怎么下载？
