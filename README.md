@@ -1,6 +1,7 @@
 # 🌀 上课的笔记
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-black"></a>
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-black"></a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes.svg?type=shield"/></a>
 
 > 注意：请不要下载Portable版本的IDEA，可能会导致配置环境时和别人不同/异常，请跟进教学进度请自配好2019.3.3版本的IDEA。
 
@@ -80,3 +81,7 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 > 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步；首先提交的为海外平台GitHub；而后国内各个平台自动从GitHub拉取Git更新。
 
 > 如没同步到当前平台上，请带上平台名称来提醒我Push一下代码。
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes?ref=badge_large)
