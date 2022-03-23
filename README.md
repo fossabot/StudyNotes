@@ -81,3 +81,5 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 > 国内镜像为 `Gitee` 拉取并同步至各个平台上，并非为即时同步；首先提交的为海外平台GitHub；而后国内各个平台自动从GitHub拉取Git更新。
 
 > 如没同步到当前平台上，请带上平台名称来提醒我Push一下代码。
+
+![Alt](https://repobeats.axiom.co/api/embed/cca4c9d5ada2846fc0617f51fb43d5e8ff18f456.svg "Repobeats analytics image")
