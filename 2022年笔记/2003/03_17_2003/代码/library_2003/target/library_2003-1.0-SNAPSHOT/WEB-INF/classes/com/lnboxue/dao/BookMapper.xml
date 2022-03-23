@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lnboxue.dao.BookMapper">
+    <resultMap id="bookMap" type="Book">
+        <id property="bookId" column="book_id"/>
+        <result property="name" column="name"/>
+        <result property="author" column="author"/>
+        <result property="publish" column="publish"/>
+        <result property="ISBN" column="ISBN"/>
+        <result property="introduction" column="introduction"/>
+        <result property="language" column="language"/>
+        <result property="price" column="price"/>
+        <result property="pubDate" column="pub_date"/>
+        <result property="classId" column="class_id"/>
+        <result property="number" column="number"/>
+    </resultMap>
+
+    <select id="getAllBooks" resultMap="bookMap">
+        SELECT * FROM book_info
+    </select>
+
+    <select id="matchBook" resultType="int">
+        SELECT COUNT(book_id) FROM book_info WHERE NAME LIKE concat('%',#{condition},'%')
+        OR author LIKE concat('%',#{condition},'%') OR introduction LIKE concat('%',#{condition},'%')
+    </select>
+
+    <select id="getBooksByCondition" resultMap="bookMap">
+        SELECT * FROM book_info WHERE NAME LIKE concat('%',#{condition},'%')
+        OR author LIKE concat('%',#{condition},'%') OR introduction LIKE concat('%',#{condition},'%')
+    </select>
+
+    <insert id="addBook" parameterType="Book">
+        insert into book_info values (null,#{name},#{author},#{publish},#{ISBN},#{introduction},
+        #{language},#{price},#{pubDate},#{classId},#{number})
+    </insert>
+
+    <select id="getBookById" resultMap="bookMap">
+        SELECT * FROM book_info WHERE book_id=#{bookId}
+    </select>
+
+    <update id="updateBook" parameterType="Book">
+        update book_info set name=#{name},author=#{author},
+        publish=#{publish},ISBN=#{ISBN},introduction=#{introduction},
+        language=#{language},price=#{price},pub_date=#{pubDate},
+        class_id=#{classId},number=#{number} where book_id=#{bookId}
+    </update>
+
+    <delete id="deleteBook">
+        delete from book_info where book_id=#{bookId}
+    </delete>
+</mapper>

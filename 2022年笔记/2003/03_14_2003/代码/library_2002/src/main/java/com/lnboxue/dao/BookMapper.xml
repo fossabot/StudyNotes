@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lnboxue.dao.BookMapper">
+    <resultMap id="bookMap" type="Book">
+        <id property="bookId" column="book_id"/>
+        <result property="name" column="name"/>
+        <result property="author" column="author"/>
+        <result property="publish" column="publish"/>
+        <result property="ISBN" column="ISBN"/>
+        <result property="introduction" column="introduction"/>
+        <result property="language" column="language"/>
+        <result property="price" column="price"/>
+        <result property="pubDate" column="pub_date"/>
+        <result property="classId" column="class_id"/>
+        <result property="number" column="number"/>
+    </resultMap>
+
+    <select id="getAllBooks" resultMap="bookMap">
+        SELECT * FROM book_info
+    </select>
+</mapper>

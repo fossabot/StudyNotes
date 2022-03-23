@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lnboxue.dao.ReaderInfoMapper">
+    <resultMap id="readerInfoMap" type="ReaderInfo">
+        <id property="readerId" column="reader_id"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="birth" column="birth"/>
+        <result property="address" column="address"/>
+        <result property="phone" column="phone"/>
+    </resultMap>
+
+    <select id="getAllReaderInfo" resultMap="readerInfoMap">
+        SELECT * FROM reader_info
+    </select>
+</mapper>

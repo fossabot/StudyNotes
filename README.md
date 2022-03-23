@@ -1,5 +1,6 @@
 # 🌀 上课的笔记
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/CurtisRecords-StudyNotes-black"></a>
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes?ref=badge_small)
 <a href="https://github.com/curtisrecords/StudyNotes"><img alt="Release" src="https://img.shields.io/badge/Lisence-Apache%202.0%20%2F%20Anti%20996-black"></a>
 <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes.svg?type=shield"/></a>
 
@@ -85,3 +86,6 @@ git clone https://agit.ai/CurtisCN/StudyNotes.git #镜像备份；滞后≈4day
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcurtisrecords%2FStudyNotes?ref=badge_large)
+
+![Alt](https://repobeats.axiom.co/api/embed/cca4c9d5ada2846fc0617f51fb43d5e8ff18f456.svg "Repobeats analytics image")
+
